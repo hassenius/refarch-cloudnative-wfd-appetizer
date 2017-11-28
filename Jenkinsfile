@@ -32,7 +32,7 @@ podTemplate(label: 'mypod',
         NAMESPACE=`cat /var/run/configs/registry-config/namespace` 
         REGISTRY=`cat /var/run/configs/registry-config/registry` 
         
-        docker build -t \${REGISTRY}/\${NAMESPACE}/wfd-appetizer-spring:${env.BUILD_NUMBER} 
+        docker build -t \${REGISTRY}/\${NAMESPACE}/wfd-appetizer-spring:${env.BUILD_NUMBER} .
         """
 
           
